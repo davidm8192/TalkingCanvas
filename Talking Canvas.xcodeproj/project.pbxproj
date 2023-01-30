@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6331353F297C6183001BAE93 /* Talking_CanvasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331353E297C6183001BAE93 /* Talking_CanvasApp.swift */; };
+		63313541297C6183001BAE93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63313540297C6183001BAE93 /* ContentView.swift */; };
+		63313543297C6185001BAE93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63313542297C6185001BAE93 /* Assets.xcassets */; };
+		63313546297C6185001BAE93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63313545297C6185001BAE93 /* Preview Assets.xcassets */; };
+		63313550297C6186001BAE93 /* Talking_CanvasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331354F297C6186001BAE93 /* Talking_CanvasTests.swift */; };
+		6331355A297C6186001BAE93 /* Talking_CanvasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63313559297C6186001BAE93 /* Talking_CanvasUITests.swift */; };
+		6331355C297C6186001BAE93 /* Talking_CanvasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331355B297C6186001BAE93 /* Talking_CanvasUITestsLaunchTests.swift */; };
+		6331356A297F685D001BAE93 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63313569297F685D001BAE93 /* TabBarView.swift */; };
+		6331356C297F68F6001BAE93 /* TabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331356B297F68F6001BAE93 /* TabBarContainerView.swift */; };
+		6331356E297F691B001BAE93 /* TabBarItemPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331356D297F691B001BAE93 /* TabBarItemPreferenceKey.swift */; };
+		63313570297F6933001BAE93 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6331356F297F6933001BAE93 /* TabBarItem.swift */; };
+		63313574297F69F3001BAE93 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63313573297F69F3001BAE93 /* HomeView.swift */; };
+		63313576297F69FC001BAE93 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63313575297F69FC001BAE93 /* SettingsView.swift */; };
+		63313578297F6A22001BAE93 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63313577297F6A22001BAE93 /* SheetView.swift */; };
+		6331357A297F6A76001BAE93 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63313579297F6A76001BAE93 /* ImagePicker.swift */; };
+		63B3F2062980891E005FFA43 /* UnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B3F2052980891E005FFA43 /* UnderlineTextField.swift */; };
+		63B3F20A29808ADF005FFA43 /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B3F20929808ADF005FFA43 /* ToolBarView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6331354C297C6186001BAE93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63313533297C6183001BAE93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6331353A297C6183001BAE93;
+			remoteInfo = "Talking Canvas";
+		};
+		63313556297C6186001BAE93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63313533297C6183001BAE93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6331353A297C6183001BAE93;
+			remoteInfo = "Talking Canvas";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6331353B297C6183001BAE93 /* Talking Canvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Talking Canvas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6331353E297C6183001BAE93 /* Talking_CanvasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talking_CanvasApp.swift; sourceTree = "<group>"; };
+		63313540297C6183001BAE93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		63313542297C6185001BAE93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63313545297C6185001BAE93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6331354B297C6186001BAE93 /* Talking CanvasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Talking CanvasTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6331354F297C6186001BAE93 /* Talking_CanvasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talking_CanvasTests.swift; sourceTree = "<group>"; };
+		63313555297C6186001BAE93 /* Talking CanvasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Talking CanvasUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63313559297C6186001BAE93 /* Talking_CanvasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talking_CanvasUITests.swift; sourceTree = "<group>"; };
+		6331355B297C6186001BAE93 /* Talking_CanvasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talking_CanvasUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		63313569297F685D001BAE93 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		6331356B297F68F6001BAE93 /* TabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarContainerView.swift; sourceTree = "<group>"; };
+		6331356D297F691B001BAE93 /* TabBarItemPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemPreferenceKey.swift; sourceTree = "<group>"; };
+		6331356F297F6933001BAE93 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		63313573297F69F3001BAE93 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		63313575297F69FC001BAE93 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		63313577297F6A22001BAE93 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		63313579297F6A76001BAE93 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		63B3F2052980891E005FFA43 /* UnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextField.swift; sourceTree = "<group>"; };
+		63B3F20929808ADF005FFA43 /* ToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63313538297C6183001BAE93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63313548297C6186001BAE93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63313552297C6186001BAE93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63313532297C6183001BAE93 = {
+			isa = PBXGroup;
+			children = (
+				6331353D297C6183001BAE93 /* Talking Canvas */,
+				6331354E297C6186001BAE93 /* Talking CanvasTests */,
+				63313558297C6186001BAE93 /* Talking CanvasUITests */,
+				6331353C297C6183001BAE93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6331353C297C6183001BAE93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6331353B297C6183001BAE93 /* Talking Canvas.app */,
+				6331354B297C6186001BAE93 /* Talking CanvasTests.xctest */,
+				63313555297C6186001BAE93 /* Talking CanvasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6331353D297C6183001BAE93 /* Talking Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				6331353E297C6183001BAE93 /* Talking_CanvasApp.swift */,
+				63313540297C6183001BAE93 /* ContentView.swift */,
+				63313568297F67EE001BAE93 /* CustomTabBar */,
+				63313572297F69CE001BAE93 /* Views */,
+				63313571297F6992001BAE93 /* Flashcards */,
+				63313542297C6185001BAE93 /* Assets.xcassets */,
+				63313544297C6185001BAE93 /* Preview Content */,
+			);
+			path = "Talking Canvas";
+			sourceTree = "<group>";
+		};
+		63313544297C6185001BAE93 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				63313545297C6185001BAE93 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6331354E297C6186001BAE93 /* Talking CanvasTests */ = {
+			isa = PBXGroup;
+			children = (
+				6331354F297C6186001BAE93 /* Talking_CanvasTests.swift */,
+			);
+			path = "Talking CanvasTests";
+			sourceTree = "<group>";
+		};
+		63313558297C6186001BAE93 /* Talking CanvasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				63313559297C6186001BAE93 /* Talking_CanvasUITests.swift */,
+				6331355B297C6186001BAE93 /* Talking_CanvasUITestsLaunchTests.swift */,
+			);
+			path = "Talking CanvasUITests";
+			sourceTree = "<group>";
+		};
+		63313568297F67EE001BAE93 /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				63313569297F685D001BAE93 /* TabBarView.swift */,
+				6331356B297F68F6001BAE93 /* TabBarContainerView.swift */,
+				6331356D297F691B001BAE93 /* TabBarItemPreferenceKey.swift */,
+				6331356F297F6933001BAE93 /* TabBarItem.swift */,
+			);
+			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
+		63313571297F6992001BAE93 /* Flashcards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Flashcards;
+			sourceTree = "<group>";
+		};
+		63313572297F69CE001BAE93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63313573297F69F3001BAE93 /* HomeView.swift */,
+				63313575297F69FC001BAE93 /* SettingsView.swift */,
+				63B3F202298088E1005FFA43 /* CardCreationSheet */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		63B3F202298088E1005FFA43 /* CardCreationSheet */ = {
+			isa = PBXGroup;
+			children = (
+				63313577297F6A22001BAE93 /* SheetView.swift */,
+				63313579297F6A76001BAE93 /* ImagePicker.swift */,
+				63B3F2052980891E005FFA43 /* UnderlineTextField.swift */,
+				63B3F20929808ADF005FFA43 /* ToolBarView.swift */,
+			);
+			path = CardCreationSheet;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6331353A297C6183001BAE93 /* Talking Canvas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6331355F297C6186001BAE93 /* Build configuration list for PBXNativeTarget "Talking Canvas" */;
+			buildPhases = (
+				63313537297C6183001BAE93 /* Sources */,
+				63313538297C6183001BAE93 /* Frameworks */,
+				63313539297C6183001BAE93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Talking Canvas";
+			productName = "Talking Canvas";
+			productReference = 6331353B297C6183001BAE93 /* Talking Canvas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6331354A297C6186001BAE93 /* Talking CanvasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63313562297C6186001BAE93 /* Build configuration list for PBXNativeTarget "Talking CanvasTests" */;
+			buildPhases = (
+				63313547297C6186001BAE93 /* Sources */,
+				63313548297C6186001BAE93 /* Frameworks */,
+				63313549297C6186001BAE93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6331354D297C6186001BAE93 /* PBXTargetDependency */,
+			);
+			name = "Talking CanvasTests";
+			productName = "Talking CanvasTests";
+			productReference = 6331354B297C6186001BAE93 /* Talking CanvasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		63313554297C6186001BAE93 /* Talking CanvasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63313565297C6186001BAE93 /* Build configuration list for PBXNativeTarget "Talking CanvasUITests" */;
+			buildPhases = (
+				63313551297C6186001BAE93 /* Sources */,
+				63313552297C6186001BAE93 /* Frameworks */,
+				63313553297C6186001BAE93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63313557297C6186001BAE93 /* PBXTargetDependency */,
+			);
+			name = "Talking CanvasUITests";
+			productName = "Talking CanvasUITests";
+			productReference = 63313555297C6186001BAE93 /* Talking CanvasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63313533297C6183001BAE93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					6331353A297C6183001BAE93 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					6331354A297C6186001BAE93 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 6331353A297C6183001BAE93;
+					};
+					63313554297C6186001BAE93 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 6331353A297C6183001BAE93;
+					};
+				};
+			};
+			buildConfigurationList = 63313536297C6183001BAE93 /* Build configuration list for PBXProject "Talking Canvas" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63313532297C6183001BAE93;
+			productRefGroup = 6331353C297C6183001BAE93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6331353A297C6183001BAE93 /* Talking Canvas */,
+				6331354A297C6186001BAE93 /* Talking CanvasTests */,
+				63313554297C6186001BAE93 /* Talking CanvasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63313539297C6183001BAE93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63313546297C6185001BAE93 /* Preview Assets.xcassets in Resources */,
+				63313543297C6185001BAE93 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63313549297C6186001BAE93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63313553297C6186001BAE93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63313537297C6183001BAE93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63313570297F6933001BAE93 /* TabBarItem.swift in Sources */,
+				63313578297F6A22001BAE93 /* SheetView.swift in Sources */,
+				63313576297F69FC001BAE93 /* SettingsView.swift in Sources */,
+				63313574297F69F3001BAE93 /* HomeView.swift in Sources */,
+				63B3F2062980891E005FFA43 /* UnderlineTextField.swift in Sources */,
+				63313541297C6183001BAE93 /* ContentView.swift in Sources */,
+				63B3F20A29808ADF005FFA43 /* ToolBarView.swift in Sources */,
+				6331356A297F685D001BAE93 /* TabBarView.swift in Sources */,
+				6331356C297F68F6001BAE93 /* TabBarContainerView.swift in Sources */,
+				6331357A297F6A76001BAE93 /* ImagePicker.swift in Sources */,
+				6331356E297F691B001BAE93 /* TabBarItemPreferenceKey.swift in Sources */,
+				6331353F297C6183001BAE93 /* Talking_CanvasApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63313547297C6186001BAE93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63313550297C6186001BAE93 /* Talking_CanvasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63313551297C6186001BAE93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6331355A297C6186001BAE93 /* Talking_CanvasUITests.swift in Sources */,
+				6331355C297C6186001BAE93 /* Talking_CanvasUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6331354D297C6186001BAE93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6331353A297C6183001BAE93 /* Talking Canvas */;
+			targetProxy = 6331354C297C6186001BAE93 /* PBXContainerItemProxy */;
+		};
+		63313557297C6186001BAE93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6331353A297C6183001BAE93 /* Talking Canvas */;
+			targetProxy = 63313556297C6186001BAE93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6331355D297C6186001BAE93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6331355E297C6186001BAE93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63313560297C6186001BAE93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Talking Canvas/Preview Content\"";
+				DEVELOPMENT_TEAM = HJ74UQAC64;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.davidma.Talking-Canvas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63313561297C6186001BAE93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Talking Canvas/Preview Content\"";
+				DEVELOPMENT_TEAM = HJ74UQAC64;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.davidma.Talking-Canvas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63313563297C6186001BAE93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HJ74UQAC64;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.davidma.Talking-CanvasTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Talking Canvas.app/Talking Canvas";
+			};
+			name = Debug;
+		};
+		63313564297C6186001BAE93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HJ74UQAC64;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.davidma.Talking-CanvasTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Talking Canvas.app/Talking Canvas";
+			};
+			name = Release;
+		};
+		63313566297C6186001BAE93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HJ74UQAC64;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.davidma.Talking-CanvasUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Talking Canvas";
+			};
+			name = Debug;
+		};
+		63313567297C6186001BAE93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HJ74UQAC64;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.davidma.Talking-CanvasUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Talking Canvas";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63313536297C6183001BAE93 /* Build configuration list for PBXProject "Talking Canvas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6331355D297C6186001BAE93 /* Debug */,
+				6331355E297C6186001BAE93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6331355F297C6186001BAE93 /* Build configuration list for PBXNativeTarget "Talking Canvas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63313560297C6186001BAE93 /* Debug */,
+				63313561297C6186001BAE93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63313562297C6186001BAE93 /* Build configuration list for PBXNativeTarget "Talking CanvasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63313563297C6186001BAE93 /* Debug */,
+				63313564297C6186001BAE93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63313565297C6186001BAE93 /* Build configuration list for PBXNativeTarget "Talking CanvasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63313566297C6186001BAE93 /* Debug */,
+				63313567297C6186001BAE93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63313533297C6183001BAE93 /* Project object */;
+}
