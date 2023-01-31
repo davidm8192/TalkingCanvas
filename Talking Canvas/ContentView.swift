@@ -10,19 +10,22 @@ import SwiftUI
 struct ContentView: View {
     @State private var selection: String = "home"
     @State private var tabSelection: TabBarItem = .home
-    @State private var isSheetShowing = false
+    @State private var showSheet = false
     
     var body: some View {
         ZStack {
-            TabBarContainerView(selection: $tabSelection) {
-                HomeView()
-                    .tabBarItem(tab: .home, selection: $tabSelection)
-                SettingsView()
-                    .tabBarItem(tab: .settings, selection: $tabSelection)
+            VStack {
+                Spacer()
+                TabBarContainerView(selection: $tabSelection) {
+                    HomeView()
+                        .tabBarItem(tab: .home, selection: $tabSelection)
+                    SettingsView()
+                        .tabBarItem(tab: .settings, selection: $tabSelection)
+                }
             }
-    
+            
             Button(action: {
-                self.isSheetShowing = true
+                self.showSheet = true
             }) {
                 ZStack {
                     Circle()
@@ -36,8 +39,9 @@ struct ContentView: View {
                 }
             }
             .frame(maxHeight: .infinity, alignment: .bottom)
-            .sheet(isPresented: $isSheetShowing) {
-                SheetView(word: "", description: "")
+            
+            .sheet(isPresented: $showSheet) {
+                SheetView(showSheet: $showSheet, word: "", description: "")
             }
         }
     }

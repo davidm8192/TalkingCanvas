@@ -22,6 +22,9 @@
 		63313576297F69FC001BAE93 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63313575297F69FC001BAE93 /* SettingsView.swift */; };
 		63313578297F6A22001BAE93 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63313577297F6A22001BAE93 /* SheetView.swift */; };
 		6331357A297F6A76001BAE93 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63313579297F6A76001BAE93 /* ImagePicker.swift */; };
+		634932CC2988D77F006331D0 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634932CB2988D77F006331D0 /* GridView.swift */; };
+		634932CE2988D80A006331D0 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634932CD2988D80A006331D0 /* Flashcard.swift */; };
+		634932D02988D811006331D0 /* FlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634932CF2988D811006331D0 /* FlashcardView.swift */; };
 		63B3F2062980891E005FFA43 /* UnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B3F2052980891E005FFA43 /* UnderlineTextField.swift */; };
 		63B3F20A29808ADF005FFA43 /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B3F20929808ADF005FFA43 /* ToolBarView.swift */; };
 /* End PBXBuildFile section */
@@ -62,6 +65,9 @@
 		63313575297F69FC001BAE93 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		63313577297F6A22001BAE93 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 		63313579297F6A76001BAE93 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		634932CB2988D77F006331D0 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		634932CD2988D80A006331D0 /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
+		634932CF2988D811006331D0 /* FlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardView.swift; sourceTree = "<group>"; };
 		63B3F2052980891E005FFA43 /* UnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextField.swift; sourceTree = "<group>"; };
 		63B3F20929808ADF005FFA43 /* ToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,6 +170,8 @@
 		63313571297F6992001BAE93 /* Flashcards */ = {
 			isa = PBXGroup;
 			children = (
+				634932CD2988D80A006331D0 /* Flashcard.swift */,
+				634932CF2988D811006331D0 /* FlashcardView.swift */,
 			);
 			path = Flashcards;
 			sourceTree = "<group>";
@@ -171,11 +179,20 @@
 		63313572297F69CE001BAE93 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				63313573297F69F3001BAE93 /* HomeView.swift */,
+				634932CA2988D769006331D0 /* HomeScreen */,
 				63313575297F69FC001BAE93 /* SettingsView.swift */,
 				63B3F202298088E1005FFA43 /* CardCreationSheet */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		634932CA2988D769006331D0 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				63313573297F69F3001BAE93 /* HomeView.swift */,
+				634932CB2988D77F006331D0 /* GridView.swift */,
+			);
+			path = HomeScreen;
 			sourceTree = "<group>";
 		};
 		63B3F202298088E1005FFA43 /* CardCreationSheet */ = {
@@ -320,10 +337,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				63313570297F6933001BAE93 /* TabBarItem.swift in Sources */,
+				634932D02988D811006331D0 /* FlashcardView.swift in Sources */,
 				63313578297F6A22001BAE93 /* SheetView.swift in Sources */,
 				63313576297F69FC001BAE93 /* SettingsView.swift in Sources */,
+				634932CC2988D77F006331D0 /* GridView.swift in Sources */,
 				63313574297F69F3001BAE93 /* HomeView.swift in Sources */,
 				63B3F2062980891E005FFA43 /* UnderlineTextField.swift in Sources */,
+				634932CE2988D80A006331D0 /* Flashcard.swift in Sources */,
 				63313541297C6183001BAE93 /* ContentView.swift in Sources */,
 				63B3F20A29808ADF005FFA43 /* ToolBarView.swift in Sources */,
 				6331356A297F685D001BAE93 /* TabBarView.swift in Sources */,

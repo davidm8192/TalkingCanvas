@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SheetView: View {
     
+    @Binding var showSheet: Bool
     @State private var isShowing = false
     @State var selectedImage: UIImage?
     @State var word: String
@@ -16,64 +17,41 @@ struct SheetView: View {
     
     var body: some View {
         
-        NavigationView {
-            VStack {
-                ToolBarView()
-                TextFieldLayout
-                    VStack(spacing: 20) {
-                            
-                            if(selectedImage != nil) {
-                                Image(uiImage: selectedImage!)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 100, height: 100)
-                            }
-                            
-                            Button(action: {
-                                isShowing.toggle()
-                            }) {
-                                if(selectedImage == nil) {
-                                    Image(systemName: "photo")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 100, height: 100)
-                                        .foregroundColor(Color.black)
-                                }
-                            }
-                            .sheet(isPresented: $isShowing, onDismiss: nil) {
-                                ImagePicker(selectedImage: $selectedImage, isShowing: $isShowing)
-                            }
-                        
-                    }
-                    
-                    .padding(12)
+        VStack {
+            ToolBarView(showSheet: $showSheet, selectedImage: $selectedImage, word: $word, description: $description)
+            Spacer()
+            TextFieldLayout
+            VStack(spacing: 20) {
                 
-            }
-         
-            //For tool bar: see if there's a way
-            // to close sheet by sliding it down
-            .toolbar {
-                ToolbarItemGroup(placement: .navigationBarLeading) {
-                    Button(action: {
-                        
-                    }) {
-                        Image(systemName: "xmark")
-                            .foregroundColor(Color.red)
-                    }
-                    Button(action: {
-                        hideKeyboard()
-                    }) {
-                        Image(systemName: "keyboard.chevron.compact.down")
-                    }
-                    Button(action: {
-                        //save data
-                        //close sheet
-                    }) {
-                        Text("Done")
+                if(selectedImage != nil) {
+                    Image(uiImage: selectedImage!)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 100, height: 100)
+                }
+                
+                Button(action: {
+                    isShowing.toggle()
+                }) {
+                    if(selectedImage == nil) {
+                        Image(systemName: "photo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(Color.black)
                     }
                 }
+                .sheet(isPresented: $isShowing, onDismiss: nil) {
+                    ImagePicker(selectedImage: $selectedImage, isShowing: $isShowing)
+                }
+                
             }
+            Spacer()
+            
+            .padding(12)
+            
         }
+        
         .onTapGesture {
             hideKeyboard()
         }
@@ -92,13 +70,14 @@ struct SheetView: View {
         )
         .padding(10)
     }
+    
 }
 
-struct SheetView_Previews: PreviewProvider {
+/*struct SheetView_Previews: PreviewProvider {
     static var previews: some View {
-        SheetView(word: "", description: "")
+        SheetView(showSheet: true, word: "", description: "")
     }
-}
+}*/
 
 #if canImport(UIKit)
 extension View {

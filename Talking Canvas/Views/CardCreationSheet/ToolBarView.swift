@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct ToolBarView: View {
+    
+    @Binding var showSheet: Bool
+    @Binding var selectedImage: UIImage?
+    @Binding var word: String
+    @Binding var description: String
+    @State private var showAlert = false
+    
     var body: some View {
         ZStack {
             HStack(spacing: 20) {
                 Button(action: {
-                    
+                    showSheet = false
                 }) {
                     Image(systemName: "xmark")
                         .foregroundColor(Color.red)
@@ -24,10 +31,19 @@ struct ToolBarView: View {
                     Image(systemName: "keyboard.chevron.compact.down")
                 }
                 Button(action: {
-                    //save data
-                    //close sheet
+                    if selectedImage == nil || word.isEmpty {
+                        self.showAlert = true
+                    }
+                    else {
+                        let flashcard = Flashcard(word: word, description: description, image: selectedImage!)
+                        FlashcardManager.shared.addFlashcard(flashcard: flashcard)
+                        showSheet = false
+                    }
                 }) {
                     Text("Done")
+                }
+                .alert(isPresented: $showAlert) {
+                    Alert(title: Text("Error"), message: Text("Please enter a word and image"), dismissButton: .default(Text("OK")))
                 }
             }
             .frame(maxWidth: .infinity, alignment: .trailing)
@@ -41,8 +57,4 @@ struct ToolBarView: View {
     }
 }
 
-struct ToolBarView_Previews: PreviewProvider {
-    static var previews: some View {
-        ToolBarView()
-    }
-}
+
