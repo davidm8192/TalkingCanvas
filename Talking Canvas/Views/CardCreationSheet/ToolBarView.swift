@@ -14,6 +14,7 @@ struct ToolBarView: View {
     @Binding var word: String
     @Binding var description: String
     @State private var showAlert = false
+    @EnvironmentObject var flashcards: Flashcards
     
     var body: some View {
         ZStack {
@@ -36,7 +37,7 @@ struct ToolBarView: View {
                     }
                     else {
                         let flashcard = Flashcard(word: word, description: description, image: selectedImage!)
-                        FlashcardManager.shared.addFlashcard(flashcard: flashcard)
+                        flashcards.flashcardArray.append(flashcard)
                         showSheet = false
                     }
                 }) {

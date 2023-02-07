@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var flashcards = Flashcards()
     @State private var selection: String = "home"
     @State private var tabSelection: TabBarItem = .home
     @State private var showSheet = false
@@ -44,6 +45,7 @@ struct ContentView: View {
                 SheetView(showSheet: $showSheet, word: "", description: "")
             }
         }
+        .environmentObject(flashcards)
     }
 }
 

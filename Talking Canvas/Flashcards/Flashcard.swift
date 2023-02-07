@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Flashcard: Identifiable {
+class Flashcard: Identifiable {
   var id = UUID()
   var word: String
   var description: String
@@ -20,7 +20,15 @@ struct Flashcard: Identifiable {
   }
 }
 
-class FlashcardManager {
+@MainActor class Flashcards: ObservableObject {
+    @Published var flashcardArray: [Flashcard]
+    
+    init() {
+        flashcardArray = []
+    }
+}
+
+/*class FlashcardManager {
   static let shared = FlashcardManager()
   private init() {}
   
@@ -29,5 +37,5 @@ class FlashcardManager {
   func addFlashcard(flashcard: Flashcard) {
     flashcards.append(flashcard)
   }
-}
+}*/
 
