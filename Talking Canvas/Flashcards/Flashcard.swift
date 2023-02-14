@@ -27,15 +27,3 @@ class Flashcard: Identifiable {
         flashcardArray = []
     }
 }
-
-/*class FlashcardManager {
-  static let shared = FlashcardManager()
-  private init() {}
-  
-  var flashcards: [Flashcard] = []
-  
-  func addFlashcard(flashcard: Flashcard) {
-    flashcards.append(flashcard)
-  }
-}*/
-

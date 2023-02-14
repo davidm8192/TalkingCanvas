@@ -25,6 +25,7 @@
 		634932CC2988D77F006331D0 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634932CB2988D77F006331D0 /* GridView.swift */; };
 		634932CE2988D80A006331D0 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634932CD2988D80A006331D0 /* Flashcard.swift */; };
 		634932D02988D811006331D0 /* FlashcardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634932CF2988D811006331D0 /* FlashcardView.swift */; };
+		63649BA8299B695100D4BFA8 /* FlashcardDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63649BA7299B695100D4BFA8 /* FlashcardDisplayView.swift */; };
 		63B3F2062980891E005FFA43 /* UnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B3F2052980891E005FFA43 /* UnderlineTextField.swift */; };
 		63B3F20A29808ADF005FFA43 /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B3F20929808ADF005FFA43 /* ToolBarView.swift */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		634932CB2988D77F006331D0 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		634932CD2988D80A006331D0 /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
 		634932CF2988D811006331D0 /* FlashcardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardView.swift; sourceTree = "<group>"; };
+		63649BA7299B695100D4BFA8 /* FlashcardDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardDisplayView.swift; sourceTree = "<group>"; };
 		63B3F2052980891E005FFA43 /* UnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextField.swift; sourceTree = "<group>"; };
 		63B3F20929808ADF005FFA43 /* ToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +174,7 @@
 			children = (
 				634932CD2988D80A006331D0 /* Flashcard.swift */,
 				634932CF2988D811006331D0 /* FlashcardView.swift */,
+				63649BA7299B695100D4BFA8 /* FlashcardDisplayView.swift */,
 			);
 			path = Flashcards;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				6331356C297F68F6001BAE93 /* TabBarContainerView.swift in Sources */,
 				6331357A297F6A76001BAE93 /* ImagePicker.swift in Sources */,
 				6331356E297F691B001BAE93 /* TabBarItemPreferenceKey.swift in Sources */,
+				63649BA8299B695100D4BFA8 /* FlashcardDisplayView.swift in Sources */,
 				6331353F297C6183001BAE93 /* Talking_CanvasApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

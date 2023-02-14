@@ -47,7 +47,6 @@ struct SheetView: View {
                 
             }
             Spacer()
-            
             .padding(12)
             
         }

@@ -36,10 +36,35 @@ struct GridView: View {
             LazyVGrid(columns: gridItemLayout, spacing: 20) {
                 ForEach(flashcards.flashcardArray) { flashcard in
                     FlashcardView(flashcard: flashcard)
-                }
+                        .contextMenu(menuItems: {
+                            Button(action: {
+                                // show view for description
+                            }, label: {
+                                Label("Show Description", systemImage: "note.text")
+                            })
+                            Button(role: .destructive) {
+                                withAnimation { () -> () in
+                                    deleteFlashcard(id: flashcard.id)
+                                }
+                            } label: {
+                                Label("Delete", systemImage: "trash")
+                            }
+                        })
+                        //add .onDrag
+                    
+                    
+                }.transition(AnyTransition.scale)
             }
         }
     }
+
+    func deleteFlashcard(id: UUID) {
+        if let index = flashcards.flashcardArray.firstIndex(where: { $0.id == id }) {
+            flashcards.flashcardArray.remove(at: index)
+        }
+    }
+
+    
 }
 
 struct GridView_Previews: PreviewProvider {

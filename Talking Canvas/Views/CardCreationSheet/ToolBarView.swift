@@ -26,11 +26,11 @@ struct ToolBarView: View {
                         .foregroundColor(Color.red)
                 }
                 Spacer()
-                Button(action: {
+                /*Button(action: {
                     hideKeyboard()
                 }) {
                     Image(systemName: "keyboard.chevron.compact.down")
-                }
+                }*/
                 Button(action: {
                     if selectedImage == nil || word.isEmpty {
                         self.showAlert = true
